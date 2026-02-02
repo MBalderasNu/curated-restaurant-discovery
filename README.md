@@ -28,7 +28,7 @@ Important files:
 - `part2/output/recommendations_labeled.csv` (output)
 
 Docs:
-- `docs/` contains my written background for Parts 1–3 (used for the final submission PDF).
+- `docs/` contains my written background for Parts 1–2 (used for the final submission PDF).
 
 ## Quick start (Windows PowerShell)
 
