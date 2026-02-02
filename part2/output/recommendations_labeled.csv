@@ -1,0 +1,107 @@
+Restaurant → Name,Comment,Image yes/no,Created At,Tags,Predicted decision,Confidence,Reason codes
+Baskeri & Basso,"The hidden backyard entrance leads to a bistro with wines, music, atmosphere, service and food to love. This is simple and honest cooking, like Baltic herring escabeche, steak tartar, fresh linguine, flank steak and great cheese. Look for the guy with the hat, patron Nicolas Thieulon, and tell him your wine wishes - mostly natural french and Italian, and enjoy the night. Hopeless to book, so walk ins after 9 PM should work. Or walk downstairs to the sister wine bar of BasBas.",no,2019-02-18 23:03:03.874,,Keep,high,specific_helpful
+Noma,"Noma single handedly shaped the culinary landscape by its focus on the Nordic Region. Standing by its philosophy of Time and Place.
+
+ It has evolved to be even more daring by showcasing three themes throughout the year. The Ocean, Plant Kingdom and Game Season. Each period is a showcase of the bounty that nature offers and Noma's creativity. A truly once in a lifetime experience.",no,2019-05-25 19:09:13.323,,Remove,high,marketing_or_ai_tone
+Kosmos,"A true institution from 1923. Eat vorschmack and fried Baltic herring. 
+
+Kosmos is a true institution in central Helsinki with the original interior. Founded in 1923 and still run by the same family, Kosmos has a unique atmosphere with a genuine feel of the old restaurant world. Eat vorschmack, fried Baltic herring, wienerschnitzel, creamed sweetbreads and pancakes with strawberry jam and have a cold beer and schnapps.",no,2022-10-19 12:32:03.906,,Recommendation needs editing,medium,spelling_issues
+Ravintola Nolita,"A cozy neighbourhood bistro serving nice food with an inspiring wine list, mostly natural wines. Run by the Serbian-Portuguese-Catalunyan trio Luca Balac, Carlos Henriques and Albert Franch Sunyer from Nolla and Elm. Small and main dishes with a nice wine list with also lesser known wines from Eastern Europe. Keep an eye on the popup events here!",no,2024-01-28 14:16:30.733,"{Bistro,Bakery,Vegetarian,""Wine bar""}",Keep,high,specific_helpful
+Restaurant Demo,"Tommi Tuominen's Demo is a modern FD-""veteran"" in Helsinki. Sometimes, undeservedly, forgotten as so many other restaurants have come in to compete in the same market. Small and intimate, but never intimidating. 
+The cooking is excellent, the service impeccable. 
+I recommend giving the restaurant a heads-up when making a reservation if you want a vegetarian dinner.",no,2019-03-20 09:27:04.596,{},Keep,high,specific_helpful
+Restaurant Grön,Cozy restaurant with Nordic focus and vegetarian twist. Chefs work practically in the middle of the room. The founders grow their own plants in different parts of Finland.,no,2019-06-09 15:16:26.284,,Keep,high,specific_helpful
+Ravintola Palace,One michelin star classic worth two stars. innovative cuisine with modern Nordic focus. Excellent wine list and views.,no,2019-06-09 15:21:13.252,,Keep,high,specific_helpful
+Daddy Greens Pizzabar Töölö,"Pizza and the beer are on point. NY-Napolitan style pizza.
+
+If you like Roberta's in New York, you'll love DG.  Zero-fucks-given about anything unnecessary. Pizza and the beer are on point. NY-Napolitan style pizza.",no,2019-09-16 10:00:35.568,,Keep,high,specific_helpful
+Alchemist,Alchemist? An other world! Yes! Visually stunning? Yes. Each dish an added value? Yes. Overall experience but also eating pure? Every bite worth it. Amazing!,no,2019-09-27 23:38:24.528,,Keep,high,specific_helpful
+Trattoria Da Enzo,Awesome classic Roman pasta – no bookings required for lunch which makes it easy to get a table as long as you are prepared to queue for a short time. On a recent visit a white truffle harvester turned up and we had a magic dish of freshly dug white truffles with buttered handmade pasta. Heaven. ,no,2019-10-06 21:05:55.109,,Keep,high,specific_helpful
+Californios,"I live literally one block away from Californios and it’s taken me five years to get in here. The vibe and aesthetic here suits my soul. So good. Uni tostada pani puri, cav n beans and strawberries tres leches. ",no,2019-11-22 17:35:59.891,,Recommendation needs editing,medium,spelling_issues
+Hills Dumplings,"Hills dumplings is a trendy and relaxed restaurant with hip atmosphere in the heart of Punavuori making it good place for an after-work or a night-out. 
+They offer very good dumplings with modern touch, I recommend trying the “new school”-dumplings. Other trendy Asian foods like fried chicken and bao buns are good but the dumplings are the reason to go there. 
+As mentioned, the food is made with a modern twist so if you are looking for traditional Asian cuisine this is not the place for it.",no,2019-12-04 08:07:02.762,,Keep,high,specific_helpful
+Aska,"When I travel I rarely want to hang out with other Swedes. But, I have been dying to dine with Aska and chef Fredrik Berselius who grow up in the northern parts of Stockholm. These days I think Fredrik is more of a New Yorker than a Sollentuna suburbian. But his cooking still carries a lot of his Nordic roots. From kohlrabi rolls to Danish donut, all throughout it is a great dinner. The furthest corner table to the left has a full view of the whole restaurant.
+
+In the kitchen, Fredrik is directing with very small movements. Then, give a Swede some vendace roe and the party is on. Here served with a fluffy potato pancake inside an emulsion with elderflower. Give me some razor clams seasoned with preserved black pine and cucumber reduction and I’ll think it’s so f*in good I won’t even remember to take a photo.
+
+Service here is carried out with professionalism and passion. GM/ Somm Rachel Paeck brings out some badass bottles; natural but not in the first over-stereotypical way. 
+
+So, the grilled rye bread serving! Here, pine cones are steeped in sugar water to release the natural yeasts, and that water is used to create the natural yeast starter.
+
+Clientele in Aska is a good mix. It's inclusive, not just on paper – but also for real manages to attract people from all paths of life. ",no,2019-12-05 14:14:56.712,,Recommendation needs editing,medium,messy_but_salvageable
+Maaemo,"Great setting and staff, with some absolutely delicious dishes. Many of the courses were inately Scandinavian, and comforting for the - degrees weather. In their last week at the current location, I can't wait to see what Chef Esben and the Maaemo team have in store for the new restaurant!",no,2019-12-07 13:57:32.863,,Keep,high,specific_helpful
+Hesburger Kallio Helsinginkatu,tosi hyvää ja kans oli ranskalaisia otin myös majoneesia,no,2025-11-19 20:13:19.817,"{Burger,Casual}",Remove,high,chain_or_franchise
+Sörkan Rinkula,,no,2025-11-02 21:57:56.273,{},Remove,high,below_min_chars(<42)
+Ravintola Musta Lammas,"Musta Lammas 🐑 – A Culinary Gem in Kuopio!
+
+An amazing fine-dining experience right here in Kuopio, Finland 🇫🇮. The ambiance is warm, elegant, and full of character — perfect for a cozy evening or a special occasion 🙌🏻
+
+The food is simply outstanding! Every dish is beautifully crafted, and you can truly taste each ingredient in perfect harmony 💖 Whether you go for the 3 or 4-course menu, every bite feels like a work of art.
+
+✨ Must-try: Their signature Basil Butter 🧈 served with freshly baked bread 🍞 — it’s heavenly! And don’t miss their creative cocktails 🍸
+
+Highly recommended for anyone who loves great food, thoughtful presentation, and unforgettable flavors 😋🙌🏻",no,2025-10-29 20:19:28.963,"{""Fine dining"",Dinner,Cocktail,Vegetarian,Seafood,""Date night"",""Business meal""}",Remove,high,"hype_plus_format_spam, emoji_spam(8)"
+ATOMIX,"Innovative Korean cuisine using north American products. 
+
+The tasting menu is a unique display of JP cuisine and the dinning room is directed by Ellie with a warmth and attention that only she bows how to do it. 
+",no,2022-09-29 14:19:07.883,,Keep,high,specific_helpful
+Pastis,"Favourite iconic bistro of Meatpacking district. From breakfast to dinner.
+
+Pastis was the heart of Meatpacking district when the area was renewed early 2000’s. During Trump and Covid it closed its doors when the whole area became temporarily more silent. Last year, it fortunately reopened, just 200 meters from the original location. Fantastic French casual bistro that is always full. Great bistro food, but the point is the amazing atmosphere. Both outside and inside . The best place to start or end your walk in the High Line, Whitney, Chelsea market or the gallery district.",no,2022-09-24 15:58:56.312,,Keep,high,specific_helpful
+Osteria dei Gusti,"Best Italian restaurant in Helsinki
+
+Best Italian restaurant in Helsinki
+Great service ✅
+Good wine ✅
+Cozy place ✅
+Amazing food 👌
+All pasta is homemade and really really good",no,2022-09-23 13:21:16.651,,Recommendation needs editing,medium,too_many_emojis(4)
+Hotel Planinka,"Great value for money!
+
+Very affordable Slovenian wines, as well as food (3-course menu - 33€).
+Great place with great choice if you are vegetarian.
+Nice service, cozy atmosphere.",no,2022-09-20 12:04:17.057,,Remove,high,hotel_not_target
+Oma San Francisco Station,"Tiny Oma San Francisco Station feels like eating sushi in a Tokyo subway station.
+
+Oma's eight-seat sushi counter has a Tokyo subway station vibe tucked away in a corner of SF's charming Japantown mall. It's casual, with a top-notch fish selection to a small sake collection. It’s an omakase-only (tasting menu) format and a quirky, fun experience with quality nigiri. ",no,2023-04-18 01:41:54.338,,Recommendation needs editing,medium,spelling_issues
+Ngon Restaurant,"Stopped here for lunch - was told by our tour guide that this was very famous and very good!
+
+This place is run extremely efficiently! Took a little long to get someone to take our order order but the flip sode is that we didnt feel pressured. The beer and the food came out very fast and was super delicious! Fresh - hot and spicy! Would go back many times if we were here longer. 
+Price was very reasonable! ",no,2023-04-08 07:59:30.271,,Recommendation needs editing,medium,spelling_issues
+Restaurant Gaijin,"Fresh and plain fish flavours—not as explosive taste as farang but great taste, service so-so depending on waiter.",no,2025-05-15 18:25:52.721,"{""Fine dining"",Dinner,Korean,Asian,Japanese,""Date night""}",Recommendation needs editing,medium,spelling_issues
+Restaurant Sea Horse,"Hearty traditional food. Salmon soup, herring, meat and potato hash.
+
+A classic. Sea horse is a casual restaurant that's been around since 1934. A very traditional local neighborhood restaurant in the Ullanlinna district. Big platters of hearty traditional food with salmon soup, herring platters, beef Lindström and their legendary ”pyttipannu” meal, potato and sausage hash. 
+ 
+You can walk in or make a booking for bigger parties. The portions are huge and people tend to drink schnapps and beer with their food. Very old school, open seven days a week which is a rare thing in Helsinki. Go for Sunday lunch, have a herring platter, fish soup and pancakes with some strawberry jam and cream as dessert. And it's just fantastic.",no,2022-10-20 12:53:04.941,"{Traditional,Casual,Nordic,Walk-in}",Keep,high,specific_helpful
+Ted's Montana Grill,"Ted’s Montana Grill is known to have the largest variety of bison dishes.
+
+This was my first time visiting Colorado so I was really excited to try bison filet. It was deliciously tender and the bleu cheese crumble added its distinctive sharp and salty flavor.",no,2022-10-21 04:06:23.764,,Keep,high,specific_helpful
+180Grammi Pizzeria Romana,"The best Roman pizza in Rome, and probably in the world.
+
+A pizzeria famous for Roman pizza, a thin and crusty pizza. This one is the best in Rome and also the best in Italy, and propably the best Roman pizza in the world. Also based on the 50 Top Pizza 2022 list being the first Roman pizzeria on the list, while all the other ones are Napoletan pizzas. So no jokes about it.",no,2022-10-17 11:17:29.804,,Recommendation needs editing,medium,spelling_issues
+The Dining Room,"The US wastes over 41 million tons of food. Every.  Single. Year. That means 38% of all food in the US goes into the bin. Every. Single. Year. The equivalent of 145 billion meals. Every. Single. Year. This should shock everyone. Something should (must) be done about this. But nobody in the Good Old US of A seems to care. 
+
+And you can see why. It’s not just the “shall I supersize that” mentality. It’s that Every. Single. Meal that you have in the US you can see the waste.  No; I don’t want a side with this. No don’t give me a doggy bag. Just give me a reasonably sized starter and main. So. That. There. Is. No. Waste. 
+
+I remember the first time I went to the US with my wife. The first time we had a meal we ordered a starter and a main each. We learnt our lesson; after that, it was a starter to share and a main to share.  And no; I don’t need sides. Not even fries. 
+
+I mention this not because the food at The Dining Room at Little Palm Island is super sized. It’s not; it’s the opposite. It’s perfect. A starter (appetiser) is a starter size; a ceviche that tastes superb and won’t fill you up. A main (entrees - really?  I mean WTF; what bit of the French language don’t you get?) is a main size; two beautiful fillets of fresh fish in tempura batter with a miso flavoured veloute. Not a portion that would feed a family for a week. This is sizing as it should be. 
+
+But more than that, this is food as it should be. It is well prepared. It tastes good. And it’s not cheap. No; good food is not cheap. If you want cheap, go to McDonalds/KFC/Taco Bell/Subway/Shite Franchise Crapola. And there we are again with the problem; cheap, rubbish, calorie laden crap, that isn’t food and doesn’t deserve to be treated as such. But in the land of the free and the home of the brave, nobody cares. Food isn’t a thing to be treated as something to savour; it’s gut luggage. It’s my human right to stuff my face with cheap shite and chuck away what I can’t stuff in. Stuff the damage I’m doing to the planet. 
+
+Please, I implore you; forgo the cheap, the crap and the average. Not just at Little Palm but always. Go to Little Palm, an island with 38 different kinds of palm tree, a sunset to die for, a perfect view of Orion, Kelly the heron and a resident osprey. And great, properly portioned food. 
+
+This being America, don’t expect a waitress waiting for a tip from another sucker to help you as you wish to be seated, and nor is there cheese, but it’s a start. Rome wasn’t built in a day. There is hope for the planet.",no,2024-04-20 02:36:01.874,{Dinner},Recommendation needs editing,medium,messy_but_salvageable
+Murun Viinibaari,"Friendly & accommodating little place with a focus on wines, but small portions of food, such as a truffle risotto to die for.",no,2024-04-21 15:16:50.570,"{""Wine bar"",""Date night"",Walk-in}",Keep,high,specific_helpful
+Restaurant Latitude 25,The food is exelent. Chef kind and always in happy mood. Love this plase.,no,2024-03-31 10:41:49.237,"{Japanese,""Counter seating""}",Recommendation needs editing,medium,spelling_issues
+Restaurant Alexanderplats,"While they may not have a standout specialty dish, every dish I've tried has been consistently good. 
+
+It's evident that they work hard to enhance the whole dining experience with diverse flavors and attention to detail.
+
+One example is the variety of carefully thought out vinaigrettes offered with their green salad starter and side dish salad. Vinegrettes were not the same. 
+
+As you see, I am a green salad police 😀
+Anyone else?",no,2024-03-23 20:53:52.006,{},Recommendation needs editing,medium,messy_but_salvageable
+Table Bruno Verjus,"Truly amazing elegant, precise cooking with most amazing ingredients. Chefs presence mesmerizing. Cooking a la minute just so great, beautiful scent all around",no,2024-03-24 09:53:08.581,"{""Michelin star""}",Keep,high,specific_helpful
