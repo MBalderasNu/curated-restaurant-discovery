@@ -10,7 +10,7 @@ from wolt_scrape import fetch_newest_venues
 from places_enrich import enrich_place
 
 
-MAX_REVIEWS = 100  # your rule
+MAX_REVIEWS = 100  # your rule/this means a restaurant can not have more than this amount of reviews to be kept. 
 
 
 def norm(s: str) -> str:
@@ -53,10 +53,10 @@ def main():
             if ln.strip()
         ]
 
-    venues = fetch_newest_venues(limit=20)
+    venues = fetch_newest_venues(limit=30)
 
     print(f"Loaded {len(blocked)} blocked brands")
-    print(f"Wolt venues: {len(venues)}")
+    print(f"Wolt venues: {len(venues)} (see debug CSV for kept/blocked breakdown)")
 
     rows = []
     debug_rows = []
@@ -64,73 +64,85 @@ def main():
     for i, v in enumerate(venues, start=1):
         # 1) blocklist filter
         if is_blocked(v.name, blocked):
-            debug_rows.append({
-                "wolt_name": v.name,
-                "wolt_url": v.url,
-                "places_name": "",
-                "full_address": "",
-                "reviews_total": "",
-                "tags": "",
-                "reason": "blocked_brand",
-            })
+            debug_rows.append(
+                {
+                    "wolt_name": v.name,
+                    "wolt_url": v.url,
+                    "places_name": "",
+                    "full_address": "",
+                    "reviews_total": "",
+                    "tags": "",
+                    "reason": "blocked_brand",
+                }
+            )
             continue
 
         # 2) Places enrichment
         print(f"[{i}/{len(venues)}] Enriching: {v.name}")
         enriched = enrich_place(api_key, v.name, city="Helsinki")
         if not enriched:
-            debug_rows.append({
-                "wolt_name": v.name,
-                "wolt_url": v.url,
-                "places_name": "",
-                "full_address": "",
-                "reviews_total": "",
-                "tags": "",
-                "reason": "no_places_match",
-            })
+            debug_rows.append(
+                {
+                    "wolt_name": v.name,
+                    "wolt_url": v.url,
+                    "places_name": "",
+                    "full_address": "",
+                    "reviews_total": "",
+                    "tags": "",
+                    "reason": "no_places_match",
+                }
+            )
             continue
 
         if not enriched.formatted_address:
-            debug_rows.append({
-                "wolt_name": v.name,
-                "wolt_url": v.url,
-                "places_name": enriched.name,
-                "full_address": "",
-                "reviews_total": enriched.user_ratings_total,
-                "tags": ", ".join(enriched.tags),
-                "reason": "missing_address",
-            })
+            debug_rows.append(
+                {
+                    "wolt_name": v.name,
+                    "wolt_url": v.url,
+                    "places_name": enriched.name,
+                    "full_address": "",
+                    "reviews_total": enriched.user_ratings_total,
+                    "tags": ", ".join(enriched.tags),
+                    "reason": "missing_address",
+                }
+            )
             continue
 
         # 3) review-count filter
         if enriched.user_ratings_total > MAX_REVIEWS:
-            debug_rows.append({
+            debug_rows.append(
+                {
+                    "wolt_name": v.name,
+                    "wolt_url": v.url,
+                    "places_name": enriched.name,
+                    "full_address": enriched.formatted_address,
+                    "reviews_total": enriched.user_ratings_total,
+                    "tags": ", ".join(enriched.tags),
+                    "reason": f"too_many_reviews(>{MAX_REVIEWS})",
+                }
+            )
+            continue
+
+        # keep
+        rows.append(
+            {
+                "name": enriched.name,
+                "full_address": enriched.formatted_address,
+                "description": enriched.description,
+                "tags": ", ".join(enriched.tags),
+            }
+        )
+        debug_rows.append(
+            {
                 "wolt_name": v.name,
                 "wolt_url": v.url,
                 "places_name": enriched.name,
                 "full_address": enriched.formatted_address,
                 "reviews_total": enriched.user_ratings_total,
                 "tags": ", ".join(enriched.tags),
-                "reason": f"too_many_reviews(>{MAX_REVIEWS})",
-            })
-            continue
-
-        # keep
-        rows.append({
-            "name": enriched.name,
-            "full_address": enriched.formatted_address,
-            "description": enriched.description,
-            "tags": ", ".join(enriched.tags),
-        })
-        debug_rows.append({
-            "wolt_name": v.name,
-            "wolt_url": v.url,
-            "places_name": enriched.name,
-            "full_address": enriched.formatted_address,
-            "reviews_total": enriched.user_ratings_total,
-            "tags": ", ".join(enriched.tags),
-            "reason": "kept",
-        })
+                "reason": "kept",
+            }
+        )
 
     # de-dupe final output by (name, address)
     uniq = {}
@@ -147,14 +159,29 @@ def main():
     with open(debug_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(
             f,
-            fieldnames=["wolt_name", "wolt_url", "places_name", "full_address", "reviews_total", "tags", "reason"],
+            fieldnames=[
+                "wolt_name",
+                "wolt_url",
+                "places_name",
+                "full_address",
+                "reviews_total",
+                "tags",
+                "reason",
+            ],
         )
         w.writeheader()
         w.writerows(debug_rows)
 
     kept_count = sum(1 for r in debug_rows if r["reason"] == "kept")
-    print(f"✅ Wrote {len(final_rows)} rows -> {out_csv}")
-    print(f"🧾 Debug rows: {len(debug_rows)} (kept: {kept_count}) -> {debug_csv}")
+    blocked_count = sum(1 for r in debug_rows if r["reason"] == "blocked_brand")
+    not_kept_count = len(debug_rows) - kept_count
+
+    print(f"Wrote {len(final_rows)} rows -> {out_csv}")
+    print(
+        f"Debug rows: {len(debug_rows)} | Kept: {kept_count} | "
+        f"Blocked: {blocked_count} | Not kept: {not_kept_count} -> {debug_csv}"
+    )
+    print("Debug output includes blocked venues + reason codes -> data/helsinki_new_openings_debug.csv")
 
 
 if __name__ == "__main__":
