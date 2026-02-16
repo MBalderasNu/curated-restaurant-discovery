@@ -38,7 +38,7 @@ This module is intentionally rule-based to prioritize clarity over automation.
 ## Why This Exists
 
 Most restaurant discovery platforms optimize for scale, popularity, and global coverage.  
-That often means smaller local venues — especially in markets like Finland — are surfaced late or not at all.
+That often means smaller local venues, especially in markets like Finland, are surfaced late or not at all.
 
 This project explores an alternative direction:
 - **Local-first instead of global-first**
