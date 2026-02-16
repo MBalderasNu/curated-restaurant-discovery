@@ -1,4 +1,4 @@
-## Part 2 — Curation Heuristics (Rule-Based Labeling)
+## Part 2 Curation Heuristics (Rule-Based Labeling)
 
 This module labels restaurant recommendations using practical, transparent quality rules based on World of Mouth (WoM) guidelines, combined with my own curation preferences around clarity, specificity, and trust.
 
