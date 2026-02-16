@@ -1,6 +1,6 @@
-Part 1: New Openings
+Part 1:
 
-For this assignment, I decided to use Wolt’s list of new restaurants in Helsinki. Typically, bigger franchises appear first (like McDonald’s, Subway, Hesburger, etc.), which led me to define a blocklist.txt, because not every restaurant fits the vision of what WoM represents.
+For this, I decided to use Wolt’s list of new restaurants in Helsinki. Typically, bigger franchises appear first (like McDonald’s, Subway, Hesburger, etc.), which led me to define a blocklist.txt, because not every restaurant fits the vision of what WoM represents.
 
 I started with a web scraping approach to grab restaurant names from the page, followed by trying to retrieve venue details such as address and possible tags.
 
